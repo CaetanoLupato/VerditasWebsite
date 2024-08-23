@@ -1,0 +1,94 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 100px);
+    position: relative;
+    scroll-margin-top: 100px;
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 8%
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: #1d1d1d;
+    font-family: 'Poppins', sans-serif;
+}
+
+#cta .title span {
+    color: #aee1e6;
+    font-family: 'Poppins', sans-serif;
+}
+
+#cta .description {
+    font-size: 1.43rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 505;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-family: 'Poppins', sans-serif;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 4px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#phone_button button {
+    box-shadow: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.shape {
+    background-color: #aee1e6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(800px at right 1000px);
+
+}
+
+@media screen and (max-width: 1363px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner, 
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+    
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 459px) {
+    #phone_button button {
+        display: none;
+    }
+}

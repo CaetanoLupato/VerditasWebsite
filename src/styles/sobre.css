@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.sobre-nos {
+    background-color: #ffffff; /* Ajuste a cor de fundo conforme necessário */
+    padding-top: 150px; /* Adiciona espaço para a sobreposição do círculo */
+    position: relative;
+    z-index: 2;
+    scroll-margin-top: -200px;
+}
+
+.sobre-section{
+    background: url(https://images.unsplash.com/photo-1654826543524-f44481dcca65?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat left;
+    background-size: 55%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding: 90px 0;
+}
+
+.container-interno{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;  
+    padding: 150px;
+}
+
+.container-interno h1{
+    margin-bottom: 30px;
+    font-size: 4rem;
+    color: #1d1d1d;
+    font-family: 'Poppins', sans-serif;
+}
+
+.texto{
+    font-size: 18px;
+    color: #4b4b4b;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width:1200px){
+    .container-interno{ 
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .sobre-section{
+        background-size: 100%;
+        padding: 100px 40px;
+        background: none;
+    }
+    .container-interno{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .sobre-section{
+        padding: 0;
+    }
+    .container-interno{
+        padding: 60px;
+    }
+}
